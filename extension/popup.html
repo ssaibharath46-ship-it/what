@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>KLU AttendIQ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="popup">
+    <h1>KLU AttendIQ</h1>
+
+    <div id="status" class="status">Checking this page…</div>
+
+    <div id="preview" class="preview" hidden>
+      <p id="subjectCount"></p>
+      <button id="syncBtn" class="sync-btn">Sync Attendance</button>
+    </div>
+
+    <div id="notFound" class="not-found" hidden>
+      <p>No attendance table detected on this page.</p>
+      <p class="hint">Open your Attendance Register in the KLU ERP, then reopen this popup.</p>
+    </div>
+
+    <div id="result" class="result" hidden></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
